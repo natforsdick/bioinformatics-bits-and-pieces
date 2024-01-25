@@ -35,11 +35,13 @@ Copy Project ID from the web address (the number following `projects/`). We'll t
     
     $HOME/bin/bs download project -i=[PROJECT ID] -o=[OUTDIR] --extension=fastq.gz
 
-An alternative method to get the fastq data is to use the BioSample or Project name (here BioSample is `AG1050-001`, project name is `AG1149_revised`):
+An alternative method to get the fastq data is to use the BioSample or Project name (here BioSample is `AG1050-001`, project name is `AG1149`):
     
     $HOME/bin/bs download biosample --name AG1050-001
+    
 OR
-    $HOME/bin/bs download project --name AG1149_revised --extension=fastq.gz -o [OUTDIR]
+
+    $HOME/bin/bs download project --name AG1149d --extension=fastq.gz -o [OUTDIR]
 
 To get all associated data and QC info (which you may or may not want to archive): 
     
