@@ -8,7 +8,7 @@ You now have an ssh key set up so this should be very straightforward.
 
     git init
 
-    git remote add origin git@github.com:natforsdick/repo-name.git
+    git remote add origin git@github.com:[USER]/[REPO-NAME].git
 
 Then add and commit at least one file before doing the next steps.
     
@@ -18,9 +18,9 @@ Then add and commit at least one file before doing the next steps.
 
     git diff --color-words # View modifications
 
-    git add <file>
+    git add [FILE]
 
-    git commit -am "message"
+    git commit -am "MESSAGE"
 
     git push origin main
 
@@ -28,7 +28,7 @@ Then add and commit at least one file before doing the next steps.
 
 Using -n makes it a dry run so you can check what you are removing.
 
-    git rm -r --cached <file/dir> -n
+    git rm -r --cached [FILE/DIR] -n
 
 ## .gitignore
 
@@ -50,15 +50,15 @@ If Git is hanging in VS Code/Linux generally, it's likely an ssh issue. First, c
 
 If you ever change the name of your repo, this will change the url. While git will still know where to push to, you are best to reset the url:
 
-    git remote set-url origin git@github.com:natforsdick/new-repo-name.git
+    git remote set-url origin git@github.com:[USER]/[NEW-REPO-NAME].git
 
 ## Create Personal Access Token on Github
 
 From August 13, 2021, Github is no longer accepting account passwords when authenticating Git operations. You need to add PAT (Personal Access Token) instead, you can follow the below method to add PFA on your system
 
-From your Github account, go to Settings => Developer Settings => Personal Access Token => Generate New Token (Give your password) => Fillup the form => click Generate token => Copy the generated Token, it will be something like ghp_sFhFsSHhTzMDreGRLjmks4Tzuzgthdvfsrta
+From your Github account, go to Settings => Developer Settings => Personal Access Token => Generate New Token (Give your password) => Fillup the form => click Generate token => Copy the generated Token (string of many random characters).
 
-Now follow below method based on your machine:
+Now follow below method based on your OS:
 
 ### For MAC OS
 
@@ -87,8 +87,6 @@ If needed, anytime you can delete the cache record by :
 
     git config --global --unset credential.helper
 
-
-
 ## Using GitHub with SSH
 
 First generate a new SSH key (email is your GitHub email) - make sure to set the path or name of the new key, and add a passphrase:
@@ -99,9 +97,7 @@ Start your SSH agent
 
     eval "$(ssh-agent -s)"
 
-
 Suppose you have a key pair specifically to access GitHub, and it is at ~/.ssh/github_key (private key) and ~/.ssh/github_key.pub (public key). 
-
 
 You can create an entry in ~/.ssh/config as follows: 
 
@@ -124,8 +120,8 @@ Then to confirm that everything is working correctly:
 
 You should get a message that you've successfully authenticated. 
 
-With this in place, your remote repository URLs that are on github.com should start with: 
-ssh://github/ 
-And you should be able to use git@github.com:natforsdick/repo.git from hereon when pushing/pulling.
+With this in place, your remote repository URLs that are on github.com should start with: `ssh://github/`
 
-And both Git and SSH will from then on select the correct key pair automatically when trying to access that repo. But putting ssh://github/ in place must be done on a remote-repo-by-remote-repo basis, which means, for each of your local repositories, updating all the remote repositories known to that repo. 
+And you should be able to use `git@github.com:[USER]/[REPO].git` from hereon when pushing/pulling.
+
+And both Git and SSH will from then on select the correct key pair automatically when trying to access that repo. But putting `ssh://github/` in place must be done on a remote-repo-by-remote-repo basis, which means, for each of your local repositories, updating all the remote repositories known to that repo. 
