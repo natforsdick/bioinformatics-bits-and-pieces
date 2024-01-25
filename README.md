@@ -7,3 +7,5 @@ Small 'how to' guides and snippets with handy tips and tricks for a range of com
 [checksums.md](https://github.com/natforsdick/bioinformatics-bits-and-pieces/blob/main/checksums.md) - How to verify file integrity when transferring/sharing data.
 
 [R-on-NeSI.md](https://github.com/natforsdick/bioinformatics-bits-and-pieces/blob/main/R-on-NeSI.md) - How to get started using R on command line NeSI.
+
+[GIT-starter.md](https://github.com/natforsdick/bioinformatics-bits-and-pieces/blob/main/GIT-starter.md) - List of general git commands, along with ssh setup.
