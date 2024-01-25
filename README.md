@@ -1,2 +1,9 @@
-# bioinformatics-bits-and-pieces
-Small 'how to' guides and handy tips and tricks for a range of bioinformatic processes
+# Bioinformatics
+
+Small 'how to' guides and snippets with handy tips and tricks for a range of common bioinformatic processes.
+
+[basespace.md](https://github.com/natforsdick/bioinformatics-bits-and-pieces/blob/main/basespace.md) - How to install and use Illumina Basespace on the command line for downloading sequencing data.
+
+[checksums.md](https://github.com/natforsdick/bioinformatics-bits-and-pieces/blob/main/checksums.md) - How to verify file integrity when transferring/sharing data.
+
+[R-on-NeSI.md](https://github.com/natforsdick/bioinformatics-bits-and-pieces/blob/main/R-on-NeSI.md) - How to get started using R on command line NeSI.
