@@ -9,3 +9,5 @@ Small 'how to' guides and snippets with handy tips and tricks for a range of com
 [R-on-NeSI.md](https://github.com/natforsdick/bioinformatics-bits-and-pieces/blob/main/R-on-NeSI.md) - How to get started using R on command line NeSI.
 
 [GIT-starter.md](https://github.com/natforsdick/bioinformatics-bits-and-pieces/blob/main/GIT-starter.md) - List of general git commands, along with ssh setup.
+
+[conda-for-program-install.md](https://github.com/natforsdick/bioinformatics-bits-and-pieces/blob/main/conda-for-program-install.md) - Instructions for starting to use conda to install other tools on NeSI. 
