@@ -1,5 +1,8 @@
 # Installing things with Miniconda on NeSI
 
+> [!NOTE]
+> Please see [NeSI's conda instructions](https://support.nesi.org.nz/hc/en-gb/articles/360001580415-Miniconda3) for further details. 
+
 This can be used to install bioconda modules and other tools that require conda environments.
 
 ## 1. initial conda set up
